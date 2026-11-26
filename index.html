@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Yurineth — Diseñadora de la Comunicación Gráfica</title>
+<meta content="Portafolio de Yurineth Vargas Salazar: diseño gráfico, identidad de marca, editorial, ilustración, social media y experiencias visuales interactivas. Colombia → Chile." name="description"/>
+<meta content="#F7E7CC" name="theme-color"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23894C29'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23F7E7CC'/%3E%3Cpath d='M16 6v4M16 22v4M6 16h4M22 16h4' stroke='%23E0A85A' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E" rel="icon"/>
+<!-- Tipografías: Basic Sans (DM Sans / Humanist Sans), Fredoka (Display), Caveat (Firma / Caligrafía) y Space Mono (Subtítulo y números) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Fredoka:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" data-i18n="skip" href="#proyectos">Saltar a proyectos</a>
+<!-- ==================== BARRA SUPERIOR (NAVBAR) ==================== -->
+<header class="navbar" id="navbar">
+<div class="container navbar__inner">
+<!-- Izquierda: Texto "Portafolio" plano y limpio -->
+<a class="navbar__brand" data-i18n="nav.brand" href="#top">Yurineth</a>
+<!-- Centro: Enlaces Minimalistas -->
+<nav aria-label="Navegación principal" class="navbar__nav" id="navbar-menu">
+<a class="navbar__link active" data-i18n="nav.home" href="#top">Home</a>
+<a class="navbar__link" data-i18n="nav.projects" href="#proyectos" id="nav-proyectos">Proyectos</a>
+<a class="navbar__link" data-i18n="nav.about" href="#sobre-mi">Sobre mí</a>
+<a class="navbar__link" data-i18n="nav.contact" href="#contacto">Contacto</a>
+</nav>
+<!-- Derecha: Toggle tema (con icono sun exacto de imagen) y selector de idioma en texto plano -->
+<div class="navbar__controls">
+<button aria-label="Alternar modo claro y oscuro" class="plain-nav-btn theme-toggle" id="theme-toggle" type="button">
+<span class="theme-text" id="theme-text">claro</span>
+<!-- Sol y luna sólidos, siguiendo los iconos de referencia -->
+<svg aria-hidden="true" class="theme-icon sun-icon" height="25" id="sun-icon" viewbox="0 0 100 100" width="25">
+<circle cx="50" cy="50" fill="currentColor" r="18"></circle>
+<g stroke="currentColor" stroke-linecap="round" stroke-width="8">
+<path d="M50 8V20 M50 80V92 M8 50H20 M80 50H92 M20.3 20.3L28.8 28.8 M71.2 71.2L79.7 79.7 M20.3 79.7L28.8 71.2 M71.2 28.8L79.7 20.3"></path>
+</g>
+</svg>
+<svg aria-hidden="true" class="theme-icon moon-icon" fill="currentColor" height="27" id="moon-icon" style="display:none" viewbox="0 0 100 100" width="27">
+<path d="M78 12C53 17 38 39 42 61c4 23 26 36 48 27-10 14-27 22-45 19C17 103-2 79 2 51 6 24 29 4 56 4c8 0 16 3 22 8Z" transform="translate(8 0) scale(.92)"></path>
+</svg>
+</button>
+<button aria-label="Cambiar idioma" class="plain-nav-btn lang-toggle" id="lang-btn" type="button">
+<span id="lang-display">Esp/Eng</span>
+</button>
+<!-- Botón Menú Móvil -->
+<button aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú" class="navbar__burger" id="navbar-burger" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</header>
+<!-- ==================== SECCIÓN HERO (HOME ULTRA-MINIMALISTA) ==================== -->
+<section class="hero" id="top">
+<div class="hero__center">
+<!-- Título "Yurineth" en tamaño gigante con la curvatura especial de la "r" -->
+<h1 aria-label="Yurineth" class="hero__title">
+<svg aria-label="Yurineth" class="hero__wordmark-svg" fill="currentColor" role="img" viewbox="0 0 1848 360" xmlns="http://www.w3.org/2000/svg">
+<path d="M940.0 115.0 L933.0 127.0 L932.0 183.0 L930.0 205.0 L931.0 305.0 L933.0 314.0 L933.0 326.0 L936.0 333.0 L941.0 338.0 L946.0 340.0 L969.0 341.0 L981.0 338.0 L988.0 331.0 L992.0 319.0 L993.0 198.0 L998.0 188.0 L1016.0 170.0 L1030.0 161.0 L1046.0 157.0 L1058.0 158.0 L1065.0 161.0 L1072.0 168.0 L1077.0 179.0 L1078.0 304.0 L1080.0 316.0 L1084.0 326.0 L1094.0 337.0 L1104.0 341.0 L1112.0 341.0 L1122.0 338.0 L1137.0 329.0 L1144.0 322.0 L1147.0 315.0 L1147.0 310.0 L1138.0 294.0 L1139.0 170.0 L1135.0 154.0 L1127.0 138.0 L1112.0 123.0 L1101.0 117.0 L1082.0 111.0 L1055.0 111.0 L1035.0 117.0 L1020.0 125.0 L1008.0 135.0 L996.0 151.0 L993.0 153.0 L990.0 149.0 L989.0 139.0 L986.0 133.0 L984.0 123.0 L977.0 114.0 L970.0 111.0 L948.0 111.0 Z M857.0 111.0 L833.0 111.0 L825.0 114.0 L818.0 120.0 L815.0 134.0 L814.0 245.0 L816.0 311.0 L819.0 323.0 L824.0 331.0 L831.0 338.0 L845.0 342.0 L856.0 340.0 L868.0 334.0 L880.0 323.0 L883.0 316.0 L883.0 308.0 L875.0 295.0 L874.0 280.0 L874.0 126.0 L871.0 119.0 L866.0 114.0 Z M316.0 115.0 L312.0 120.0 L310.0 127.0 L309.0 145.0 L309.0 267.0 L312.0 288.0 L315.0 298.0 L325.0 318.0 L337.0 330.0 L348.0 337.0 L372.0 343.0 L392.0 343.0 L413.0 338.0 L434.0 325.0 L455.0 304.0 L457.0 306.0 L458.0 317.0 L462.0 328.0 L473.0 339.0 L482.0 342.0 L490.0 342.0 L505.0 338.0 L515.0 332.0 L524.0 323.0 L526.0 318.0 L526.0 310.0 L518.0 296.0 L516.0 288.0 L517.0 160.0 L516.0 130.0 L512.0 117.0 L504.0 111.0 L498.0 110.0 L474.0 110.0 L469.0 111.0 L462.0 116.0 L457.0 127.0 L455.0 255.0 L442.0 274.0 L428.0 286.0 L418.0 291.0 L407.0 294.0 L391.0 294.0 L384.0 291.0 L377.0 285.0 L371.0 273.0 L368.0 247.0 L368.0 125.0 L365.0 118.0 L356.0 111.0 L328.0 110.0 Z M1247.0 117.0 L1231.0 125.0 L1207.0 147.0 L1200.0 158.0 L1191.0 179.0 L1185.0 209.0 L1185.0 247.0 L1191.0 278.0 L1201.0 300.0 L1207.0 309.0 L1221.0 323.0 L1230.0 329.0 L1250.0 338.0 L1275.0 343.0 L1312.0 344.0 L1333.0 341.0 L1353.0 335.0 L1375.0 324.0 L1384.0 316.0 L1387.0 311.0 L1388.0 300.0 L1379.0 282.0 L1371.0 276.0 L1361.0 276.0 L1344.0 285.0 L1321.0 294.0 L1304.0 297.0 L1280.0 296.0 L1265.0 290.0 L1252.0 278.0 L1245.0 265.0 L1242.0 252.0 L1243.0 240.0 L1279.0 244.0 L1322.0 245.0 L1362.0 239.0 L1378.0 231.0 L1384.0 222.0 L1388.0 209.0 L1389.0 200.0 L1388.0 173.0 L1378.0 148.0 L1372.0 140.0 L1354.0 124.0 L1340.0 117.0 L1321.0 111.0 L1287.0 109.0 L1268.0 111.0 Z M1247.0 184.0 L1256.0 170.0 L1267.0 161.0 L1287.0 156.0 L1302.0 156.0 L1312.0 158.0 L1324.0 164.0 L1335.0 177.0 L1340.0 193.0 L1340.0 205.0 L1333.0 210.0 L1319.0 212.0 L1286.0 213.0 L1253.0 210.0 L1245.0 207.0 L1243.0 205.0 Z M582.0 103.0 L576.0 108.0 L573.0 113.0 L564.0 145.0 L564.0 150.0 L558.0 166.0 L552.0 196.0 L552.0 206.0 L555.0 213.0 L564.0 219.0 L580.0 224.0 L596.0 221.0 L603.0 215.0 L606.0 209.0 L617.0 164.0 L620.0 161.0 L644.0 164.0 L659.0 164.0 L663.0 166.0 L660.0 175.0 L657.0 178.0 L642.0 207.0 L625.0 252.0 L621.0 280.0 L622.0 296.0 L625.0 307.0 L631.0 318.0 L640.0 328.0 L650.0 335.0 L664.0 341.0 L675.0 343.0 L692.0 343.0 L703.0 341.0 L720.0 334.0 L734.0 324.0 L749.0 309.0 L761.0 293.0 L770.0 278.0 L776.0 264.0 L781.0 246.0 L781.0 241.0 L776.0 232.0 L768.0 225.0 L757.0 219.0 L745.0 217.0 L738.0 222.0 L718.0 262.0 L703.0 279.0 L685.0 285.0 L679.0 284.0 L674.0 279.0 L673.0 262.0 L677.0 243.0 L683.0 228.0 L689.0 218.0 L691.0 208.0 L697.0 201.0 L710.0 171.0 L718.0 157.0 L721.0 146.0 L721.0 136.0 L719.0 131.0 L711.0 122.0 L695.0 116.0 L679.0 114.0 L655.0 114.0 L623.0 119.0 L614.0 107.0 L604.0 102.0 L590.0 100.0 Z M1448.0 91.0 L1443.0 94.0 L1439.0 100.0 L1437.0 107.0 L1436.0 126.0 L1433.0 129.0 L1421.0 129.0 L1415.0 131.0 L1410.0 139.0 L1409.0 153.0 L1410.0 163.0 L1415.0 172.0 L1419.0 174.0 L1433.0 175.0 L1435.0 177.0 L1435.0 272.0 L1438.0 294.0 L1443.0 310.0 L1450.0 322.0 L1460.0 332.0 L1475.0 340.0 L1489.0 343.0 L1507.0 344.0 L1526.0 342.0 L1543.0 338.0 L1556.0 332.0 L1564.0 324.0 L1568.0 315.0 L1568.0 304.0 L1564.0 293.0 L1559.0 288.0 L1550.0 288.0 L1544.0 291.0 L1526.0 295.0 L1508.0 294.0 L1500.0 288.0 L1496.0 279.0 L1495.0 270.0 L1495.0 178.0 L1497.0 175.0 L1500.0 174.0 L1549.0 174.0 L1559.0 171.0 L1564.0 161.0 L1564.0 141.0 L1562.0 134.0 L1555.0 129.0 L1548.0 128.0 L1497.0 128.0 L1494.0 125.0 L1493.0 100.0 L1489.0 94.0 L1484.0 91.0 L1473.0 89.0 L1457.0 89.0 Z M1616.0 51.0 L1609.0 59.0 L1605.0 73.0 L1605.0 316.0 L1608.0 329.0 L1611.0 334.0 L1616.0 339.0 L1621.0 341.0 L1637.0 343.0 L1653.0 340.0 L1661.0 332.0 L1664.0 324.0 L1665.0 204.0 L1667.0 196.0 L1673.0 185.0 L1689.0 169.0 L1705.0 160.0 L1719.0 157.0 L1731.0 158.0 L1738.0 161.0 L1746.0 170.0 L1751.0 182.0 L1751.0 312.0 L1755.0 329.0 L1763.0 339.0 L1772.0 343.0 L1782.0 343.0 L1791.0 341.0 L1807.0 333.0 L1817.0 323.0 L1820.0 314.0 L1817.0 306.0 L1810.0 295.0 L1812.0 212.0 L1811.0 170.0 L1806.0 152.0 L1797.0 136.0 L1784.0 123.0 L1766.0 114.0 L1755.0 111.0 L1727.0 111.0 L1706.0 117.0 L1689.0 126.0 L1666.0 151.0 L1664.0 149.0 L1664.0 66.0 L1661.0 58.0 L1655.0 51.0 L1648.0 48.0 L1631.0 47.0 L1622.0 48.0 Z M38.0 49.0 L34.0 51.0 L29.0 58.0 L29.0 70.0 L36.0 88.0 L59.0 131.0 L83.0 167.0 L90.0 180.0 L104.0 200.0 L123.0 223.0 L122.0 301.0 L123.0 323.0 L125.0 330.0 L130.0 338.0 L137.0 342.0 L146.0 344.0 L162.0 344.0 L173.0 342.0 L179.0 339.0 L184.0 333.0 L188.0 319.0 L187.0 224.0 L222.0 178.0 L262.0 114.0 L281.0 76.0 L284.0 62.0 L283.0 58.0 L279.0 53.0 L267.0 48.0 L241.0 48.0 L233.0 50.0 L228.0 53.0 L216.0 69.0 L207.0 88.0 L177.0 142.0 L162.0 165.0 L154.0 172.0 L143.0 157.0 L88.0 58.0 L80.0 51.0 L71.0 48.0 L53.0 47.0 Z M833.0 30.0 L822.0 36.0 L818.0 40.0 L813.0 49.0 L812.0 64.0 L815.0 75.0 L824.0 86.0 L834.0 91.0 L850.0 92.0 L858.0 90.0 L868.0 83.0 L875.0 72.0 L877.0 65.0 L877.0 54.0 L872.0 41.0 L865.0 34.0 L859.0 31.0 L850.0 29.0 Z" fill-rule="evenodd"></path>
+</svg>
+</h1>
+<!-- Subtítulo centrado debajo -->
+<p class="hero__subtitle" data-i18n="hero.subtitle">
+        Diseñadora de la comunicación gráfica
+      </p>
+</div>
+<!-- Esquina inferior derecha: Únicamente © 2026 Yurineth -->
+<div class="hero__copyright" data-i18n="hero.copyright">
+      © 2026 Yurineth
+    </div>
+</section>
+<!-- ==================== SECCIÓN PROYECTOS (CARRUSEL DE CARTAS CRONOLÓGICO) ==================== -->
+<section aria-labelledby="projects-heading" class="section section--projects" id="proyectos">
+<div class="container">
+<header class="section-header">
+<div class="section-tag">
+<span class="tag-bullet">✦</span>
+<span data-i18n="projects.tag">CORRESPONDENCIA &amp; OBRAS // 2024 — 2026</span>
+</div>
+<h2 class="section-title" data-i18n="projects.title" id="projects-heading">
+          Cartas de Proyectos
+        </h2>
+<h3 aria-live="polite" class="projects-active-title" id="projects-active-title">01 · Los ecosistemas de Colombia</h3>
+</header>
+<!-- Carrusel Interactivo de Cartas Postales -->
+<div class="letters-carousel-container">
+<!-- Carril de Cartas -->
+<div class="letters-track" id="letters-track">
+<!-- ==================== CARTA 01 · 2025: Oskowampik ==================== -->
+
+<!-- ==================== CARTA 02 · 2024: Los ecosistemas de Colombia ==================== -->
+
+<!-- ==================== CARTA 03 · 2026: PULSO ==================== -->
+
+<!-- ==================== CARTA 04 · 2026: Dos realidades son infinitas ==================== -->
+
+<!-- ==================== CARTA 05 · 2026: Ser niños ==================== -->
+
+<!-- ==================== CARTA 06 · 2026: Senses Party ==================== -->
+
+<!-- ==================== CARTA 07 · 2026: Territorio & Textil ==================== -->
+
+<article class="letter-card" data-index="1" data-project="biodiversidad">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--sage">
+<span class="stamp-year">2024</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">BIOMAS</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2024</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo letter-card__photo--eco">
+<img alt="Portada de Los ecosistemas de Colombia: ilustración de un ecosistema tropical colombiano" loading="lazy" src="./images/Los ecosistemas de Colombia/portada.png"/>
+<span class="letter-card__num">01 · 2024</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.biodiversidad.category">Animación 2D &amp; Diseño Editorial</span>
+<h3 class="letter-card__title">01 · Los ecosistemas de Colombia</h3>
+<p class="letter-card__text" data-i18n="projects.items.biodiversidad.short">Colombia es sinónimo de riqueza natural, pero ¿realmente conocemos lo que protegemos? “Los ecosistemas de Colombia” es un viaje visual por nuestra pluralidad de biomas, diseñado no solo para mostrar su belleza, sino para revelar su estado actual y despertar una conciencia real sobre el territorio que habitamos. ¿Sabías que el ecosistema marino conforma el 45% del territorio Colombiano?</p>
+<div class="letter-card__tools"><span class="letter-tag">After Effects</span><span class="letter-tag">Illustrator</span><span class="letter-tag">Photoshop</span><span class="letter-tag">Procreate</span><span class="letter-tag">Audacity</span><span class="letter-tag">Adobe Premiere</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="biodiversidad" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://vimeo.com/1247582560" rel="noopener noreferrer" target="_blank" title="Ver en Vimeo">
+                  ↗
+                </a>
+</div>
+</div>
+</article><article class="letter-card" data-index="2" data-project="oskowampik">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--clay">
+<span class="stamp-year">2025</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">COLOMBIA</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2025</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo">
+<img alt="Portada de Oskowampik, la tierra dorada" loading="lazy" src="./images/Oskowampik/Oskowampik_portada.jpg"/>
+<span class="letter-card__num">02 · 2025</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.oskowampik.category">Identidad Visual &amp; Concept Art 3D</span>
+<h3 class="letter-card__title">02 · Oskowampik</h3>
+<p class="letter-card__text" data-i18n="projects.items.oskowampik.short">"Oskowampik, la tierra Dorada" es un cortometraje en motion capture realizado por 12 estudiantes de sexto semestre de la Universidad Autónoma de Occidente. La historia sigue a dos jóvenes investigadores que se adentran en la cordillera central colombiana para documentar una comunidad originaria casi desconocida. Guiados por un misterioso intermediario de amplio conocimiento, descubrirán la magia ancestral que resguarda este pueblo y el inminente riesgo de que su legado desaparezca para siempre.</p>
+<div class="letter-card__tools"><span class="letter-tag">Autodesk 3ds Max</span><span class="letter-tag">After Effects</span><span class="letter-tag">Illustrator</span><span class="letter-tag">Photoshop</span><span class="letter-tag">Procreate</span><span class="letter-tag">Audacity</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="oskowampik" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://www.behance.net/gallery/242598803/Oskowampik-la-tierra-Dorada" rel="noopener noreferrer" target="_blank" title="Ver en Behance">
+                  ↗
+                </a>
+</div>
+</div>
+</article><article class="letter-card" data-index="3" data-project="dos">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--sunrise">
+<span class="stamp-year">2026</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">VISIÓN</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2026</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo letter-card__photo--vision">
+<div class="letter-photo-graphic letter-photo-graphic--vision">
+<span>MACHINE_EYE // HUMAN</span>
+<h4>DOS REALIDADES</h4>
+<small>INTERACTIVE EXP</small>
+</div>
+<span class="letter-card__num">03 · 2026</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.dos.category">Branding Digital · Visión Computacional</span>
+<h3 class="letter-card__title">03 · Dos realidades son infinitas realidades</h3>
+<p class="letter-card__text" data-i18n="projects.items.dos.short">Con el objetivo de comprender las posibilidades y limitaciones de las bibliotecas "OpenCV" y "MediaPipe" y la manera en que las máquinas pueden percibir la "realidad", he creado esta experiencia web que te permite interactuar por separado con estas y a la vez de manera conjunta.</p>
+<div class="letter-card__tools"><span class="letter-tag">GitHub Pages</span><span class="letter-tag">Figma</span><span class="letter-tag">Claude</span><span class="letter-tag">OpenCV</span><span class="letter-tag">MediaPipe</span><span class="letter-tag">HTML</span><span class="letter-tag">CSS</span><span class="letter-tag">JS</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="dos" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://aguapanelita.github.io/Dos_Realidades/" rel="noopener noreferrer" target="_blank" title="Abrir proyecto">
+                  ↗
+                </a>
+</div>
+</div>
+</article><article class="letter-card" data-index="4" data-project="pulso">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--aloe">
+<span class="stamp-year">2026</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">AUDIOVISUAL</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2026</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo">
+<img alt="Instalación PULSO" loading="lazy" src="./images/PULSO/pulso_home.png"/>
+<span class="letter-card__num">04 · 2026</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.pulso.category">Instalación Audiovisual &amp; Esculturas 3D</span>
+<h3 class="letter-card__title">04 · PULSO</h3>
+<p class="letter-card__text" data-i18n="projects.items.pulso.short">PULSO es una plataforma audiovisual experimental que transforma videos en composiciones sonoras mediante el análisis de sus colores y movimientos, generando esculturas 3D evolutivas.</p>
+<div class="letter-card__tools"><span class="letter-tag">GitHub Pages</span><span class="letter-tag">Claude</span><span class="letter-tag">OpenCV</span><span class="letter-tag">MediaPipe</span><span class="letter-tag">HTML</span><span class="letter-tag">CSS</span><span class="letter-tag">JS</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="pulso" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://aguapanelita.github.io/PULSO/" rel="noopener noreferrer" target="_blank" title="Abrir PULSO">
+                  ↗
+                </a>
+</div>
+</div>
+</article><article class="letter-card" data-index="5" data-project="senses">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--beans">
+<span class="stamp-year">2026</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">ARCADE</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2026</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo letter-card__photo--party">
+<div class="letter-photo-graphic letter-photo-graphic--party">
+<span>MULTIPLAYER 4P</span>
+<h4>SENSES PARTY</h4>
+<small>MOBILE CONTROLLER</small>
+</div>
+<span class="letter-card__num">05 · 2026</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.senses.category">Campaña Digital &amp; Social Gaming</span>
+<h3 class="letter-card__title">05 · Senses Party</h3>
+<p class="letter-card__text" data-i18n="projects.items.senses.short">Senses Party es un juego multijugador (4 personas) con una sola pantalla compartida y los teléfonos de cada persona como controles. Alguien abre la consola en un computador o proyector, y los demás usan el link para entrar a la sala desde el navegador, sin instalar nada. Desde ahí compiten en minijuegos que usan los sensores.</p>
+<div class="letter-card__tools"><span class="letter-tag">GitHub Pages</span><span class="letter-tag">Claude</span><span class="letter-tag">OpenCV</span><span class="letter-tag">MediaPipe</span><span class="letter-tag">HTML</span><span class="letter-tag">CSS</span><span class="letter-tag">JS</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="senses" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://aguapanelita.github.io/Senses_Party/" rel="noopener noreferrer" target="_blank" title="Jugar en vivo">
+                  ↗
+                </a>
+</div>
+</div>
+</article><article class="letter-card" data-index="6" data-project="ninos">
+<div class="letter-card__postage">
+<div class="letter-stamp letter-stamp--clay">
+<span class="stamp-year">2026</span>
+<span class="stamp-icon">✦</span>
+</div>
+<div aria-hidden="true" class="letter-postmark">
+<svg class="postmark-circle" viewbox="0 0 60 60">
+<circle cx="30" cy="30" fill="none" r="26" stroke="currentColor" stroke-dasharray="3 2"></circle>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="30" y="32">INFANCIA</text>
+<text fill="currentColor" font-size="5.5" text-anchor="middle" x="30" y="42">2026</text>
+</svg>
+</div>
+</div>
+<div class="letter-card__photo">
+<img alt="Ser Niños, publicación y animación" loading="lazy" src="./images/ser_ninos/general.png"/>
+<span class="letter-card__num">06 · 2026</span>
+</div>
+<div class="letter-card__content">
+<span class="letter-card__category" data-i18n="projects.items.ninos.category">Editorial Ilustrado &amp; Narrativa</span>
+<h3 class="letter-card__title">06 · Ser niños</h3>
+<p class="letter-card__text" data-i18n="projects.items.ninos.short">A través de esta pequeña animación (o mi carta de amor a Chile) quise volver a esa mirada inocente con la que descubríamos el mundo, a los recuerdos que habitan nuestros hogares y a esas pequeñas cosas que nos hacen sentir que pertenecemos a un lugar; además quise mirar un poquito más allá de la nostalgia y recordar que nuestra historia, incluso con sus heridas, forma parte de aquello que somos.</p>
+<div class="letter-card__tools"><span class="letter-tag">Procreate</span><span class="letter-tag">Photoshop</span><span class="letter-tag">After Effects</span><span class="letter-tag">Adobe Premiere</span><span class="letter-tag">Sketch Tools</span></div>
+<div class="letter-card__actions">
+<button class="btn-read-letter" data-open="ninos" type="button">
+<span data-i18n="projects.readLetter">Ver reverso</span>
+<span class="arrow">→</span>
+</button>
+<a class="letter-ext-link" href="https://vimeo.com/1247494989?fl=tl&amp;fe=ec&amp;share=copy" rel="noopener noreferrer" target="_blank" title="Ver en Vimeo">
+                  ↗
+                </a>
+</div>
+</div>
+</article></div>
+<!-- Controles del Carrusel de Cartas (Nostálgicos y Minimalistas) -->
+<div class="carousel-nav">
+<button aria-label="Carta anterior" class="carousel-arrow prev" id="carousel-prev" type="button">
+<span>←</span> <span class="arrow-text" data-i18n="projects.prev">Anterior</span>
+</button>
+<div class="carousel-status">
+<span aria-live="polite" class="carousel-counter" id="carousel-counter">01 / 07</span>
+<div aria-label="Seleccionar proyecto" class="carousel-dots" id="carousel-dots" role="group">
+<button aria-label="Ir al proyecto 1" class="dot active" data-slide="0" type="button"></button>
+<button aria-label="Ir al proyecto 2" class="dot" data-slide="1" type="button"></button>
+<button aria-label="Ir al proyecto 3" class="dot" data-slide="2" type="button"></button>
+<button aria-label="Ir al proyecto 4" class="dot" data-slide="3" type="button"></button>
+<button aria-label="Ir al proyecto 5" class="dot" data-slide="4" type="button"></button>
+<button aria-label="Ir al proyecto 6" class="dot" data-slide="5" type="button"></button>
+<button aria-label="Ir al proyecto 7" class="dot" data-slide="6" type="button"></button>
+</div>
+</div>
+<button aria-label="Siguiente carta" class="carousel-arrow next" id="carousel-next" type="button">
+<span class="arrow-text" data-i18n="projects.next">Siguiente</span> <span>→</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN SOBRE MÍ ==================== -->
+<section aria-labelledby="about-heading" class="section section--about" id="sobre-mi">
+  <div class="container">
+    <div class="about-profile-layout">
+      <div class="about-stamp-frame" role="img" aria-label="Espacio reservado para una fotografía de perfil">
+        <div class="about-stamp-frame__perforation">
+          <div class="about-stamp-frame__photo-placeholder">
+            <svg viewBox="0 0 120 150" aria-hidden="true" focusable="false">
+              <circle cx="60" cy="48" r="23" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 128c3-28 18-43 40-43s37 15 40 43" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span data-i18n="about.photoPlaceholder">Fotografía próximamente</span>
+          </div>
+        </div>
+        <span class="about-stamp-frame__caption" data-i18n="about.photoCaption">Yurineth Vargas Salazar</span>
+      </div>
+
+      <div class="about-profile-content">
+        <section class="about-profile-block about-profile-block--bio">
+          <span class="about-profile-kicker" data-i18n="about.tag">SOBRE MÍ</span>
+          <h2 class="visually-hidden" id="about-heading" data-i18n="about.title">Sobre mí</h2>
+          <p class="about-profile-lead" data-i18n="about.lead">Soy Yurineth Vargas Salazar, diseñadora de la Comunicación Gráfica.</p>
+          <p data-i18n="about.p1">Me reconozco como una persona sensible, apasionada por el arte y curiosa: me mueve profundamente entender cómo se construyen las imágenes, las historias y las experiencias que nos conmueven e inspiran.</p>
+          <p data-i18n="about.p2">Mi recorrido en el diseño me ha llevado por los mágicos caminos de las narrativas audiovisuales, la ilustración, la animación, el modelado 3D, la identidad de marca, el desarrollo de interfaces web y el diseño de indumentaria textil.</p>
+        </section>
+
+        <section class="about-profile-block about-profile-block--timeline" aria-labelledby="about-timeline-heading">
+          <h3 id="about-timeline-heading" data-i18n="about.timelineHeading">Mi recorrido profesional</h3>
+          <div class="about-timeline-list">
+            <div class="about-timeline-item">
+              <span class="about-timeline-years">2023 – 2025</span>
+              <span class="about-timeline-place" data-i18n="about.timeline.fromPlace">Colombia</span>
+              <span class="about-timeline-university">Universidad Autónoma de Occidente</span>
+            </div>
+            <div class="about-timeline-item">
+              <span class="about-timeline-years">2026</span>
+              <span class="about-timeline-place" data-i18n="about.timeline.toPlace">Chile</span>
+              <span class="about-timeline-university">Universidad Diego Portales</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-profile-block about-profile-block--tools" aria-labelledby="about-tools-heading">
+          <h3 id="about-tools-heading" data-i18n="about.toolsTitle">Herramientas</h3>
+          <div class="letter-tools-grid">
+            <span class="letter-seal">Adobe Illustrator</span>
+            <span class="letter-seal">Photoshop</span>
+            <span class="letter-seal">After Effects</span>
+            <span class="letter-seal">Adobe Premiere</span>
+            <span class="letter-seal">InDesign</span>
+            <span class="letter-seal">Procreate</span>
+            <span class="letter-seal">Autodesk 3ds Max</span>
+            <span class="letter-seal">Figma</span>
+            <span class="letter-seal">HTML5 &amp; CSS3</span>
+            <span class="letter-seal">JavaScript</span>
+            <span class="letter-seal">GitHub</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ==================== SECCIÓN CONTACTO (POSTAL AÉREA) ==================== -->
+<section aria-labelledby="contact-heading" class="section section--contact" id="contacto">
+<div class="container">
+<div class="postcard">
+<div class="postcard__airmail-border"></div>
+<div class="postcard__inner">
+<div class="postcard__left">
+<div class="section-tag">
+<span class="tag-bullet">✦</span>
+<span data-i18n="contact.tag">CORRESPONDENCIA // MENSAJE</span>
+</div>
+<h2 class="postcard__title" data-i18n="contact.title" id="contact-heading">
+              ¿Creamos algo juntos?
+            </h2>
+<p class="postcard__message" data-i18n="contact.desc">
+              Estoy siempre abierta a nuevas colaboraciones creativas, proyectos de diseño gráfico, identidades de marca, ilustraciones o experiencias interactivas. Escríbeme y demos vida a tu idea.
+            </p>
+<div class="postcard__email-box">
+<span class="email-label" data-i18n="contact.emailLabel">CORREO ELECTRÓNICO:</span>
+<div class="email-action-row">
+<a class="email-link" href="mailto:yuriv2424@gmail.com">
+                  yuriv2424@gmail.com
+                </a>
+<button class="btn-copy-email" id="btn-copy-email" title="Copiar correo al portapapeles" type="button">
+<span data-i18n="contact.copy" id="copy-text">Copiar</span>
+</button>
+</div>
+</div>
+<div class="postcard__social">
+<span class="social-label" data-i18n="contact.socialLabel">REDES &amp; PORTAFOLIOS:</span>
+<div class="social-links">
+<a class="social-pill" href="https://www.instagram.com/yurissdg/" rel="noopener noreferrer" target="_blank">
+<span>Instagram</span> <span class="arrow">↗</span>
+</a>
+<a class="social-pill" href="https://www.behance.net/yurinethvargas24" rel="noopener noreferrer" target="_blank">
+<span>Behance</span> <span class="arrow">↗</span>
+</a>
+<a class="social-pill" href="https://github.com/Aguapanelita" rel="noopener noreferrer" target="_blank">
+<span>GitHub</span> <span class="arrow">↗</span>
+</a>
+</div>
+</div>
+</div>
+<div class="postcard__right">
+<div class="postal-stamp">
+<div class="postal-stamp__cutout">
+<span class="stamp-art">✦ 🌸 ✦</span>
+<span class="stamp-val">2026</span>
+<span class="stamp-geo">CHL / COL</span>
+</div>
+</div>
+<div class="postmark">
+<svg class="postmark__svg" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="44" stroke="currentColor" stroke-dasharray="4 2" stroke-width="2"></circle>
+<circle cx="50" cy="50" fill="none" r="34" stroke="currentColor" stroke-width="1.2"></circle>
+<path d="M 20,50 A 30,30 0 1,1 80,50" fill="none" id="curve-postmark"></path>
+<text fill="currentColor" font-size="7.5" letter-spacing="1.5">
+<textpath href="#curve-postmark" startoffset="50%" text-anchor="middle">SANTIAGO DE CHILE</textpath>
+</text>
+<text fill="currentColor" font-size="8" font-weight="bold" text-anchor="middle" x="50" y="52">2026</text>
+<text fill="currentColor" font-size="6.5" text-anchor="middle" x="50" y="63">CORREOS</text>
+</svg>
+</div>
+<div class="postal-lines">
+<div class="postal-line"><span>PARA:</span> <strong>Cualquier rincón del mundo</strong></div>
+<div class="postal-line"><span>DE:</span> <strong>Yurineth Vargas Salazar</strong></div>
+<div class="postal-line"><span>LOC:</span> <strong>Stgo, Chile</strong></div>
+<div class="postal-line"><span>MOTIVO:</span> <strong>Diseño &amp; Comunicación Gráfica</strong></div>
+</div>
+</div>
+</div>
+<footer class="postcard__footer">
+<span>© 2026 Yurineth</span>
+</footer>
+</div>
+</div>
+</section>
+<!-- ==================== MODAL DE PROYECTO (FICHA TÉCNICA POP-OUT) ==================== -->
+<dialog aria-labelledby="modal-title" class="project-modal" id="project-modal">
+<div class="project-modal__backdrop" data-close-modal=""></div>
+<div class="project-modal__card" role="document">
+<button aria-label="Cerrar ficha" class="project-modal__close" id="modal-close-btn" type="button">✕</button>
+<div class="project-modal__header">
+<span class="project-modal__cat" id="modal-cat">CATEGORÍA</span>
+<h3 class="project-modal__title" id="modal-title">Título del Proyecto</h3>
+</div>
+<div class="project-modal__media" id="modal-media"></div>
+<div class="project-modal__body">
+<div class="project-modal__desc">
+<h4 data-i18n="modal.aboutTitle">Acerca de la obra</h4>
+<p id="modal-desc-text">Descripción detallada del proyecto...</p>
+</div>
+<div class="project-modal__tools-wrap">
+<h4 data-i18n="modal.toolsTitle">Herramientas &amp; Medios</h4>
+<div class="project-modal__tools" id="modal-tools-list"></div>
+</div>
+<div class="project-modal__actions" id="modal-actions">
+<a class="btn btn--clay" href="#" id="modal-ext-btn" rel="noopener noreferrer" target="_blank">
+<span data-i18n="modal.visit" id="modal-btn-text">Abrir proyecto completo</span>
+<span>↗</span>
+</a>
+</div>
+</div>
+</div>
+</dialog>
+<!-- Toast de Notificación -->
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
