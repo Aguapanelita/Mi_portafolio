@@ -14,9 +14,9 @@ Abre el link a traves de ti dispositivo móvil o pc y conoce un poco sobre mi ex
 - CSS: Este define el estilo que llevará mi portafolio, como colores, tipografía, tamaños, efectos...
 - JS: Define las interacciones y de que manera funcionará cada elemento en el espacio y el uno con otro
 
-## Créditos
+## Tecnologias
 
-ia:
+Me he apoyado principalmente del uso de chatgpt para ordenar mis ideas y generar prompts que posteriormente usaría con Claude.
 
 ## Reflexión y agradecimientos
 
