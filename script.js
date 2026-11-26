@@ -632,19 +632,107 @@
         item.textContent = tag.textContent.trim();
         backTools.appendChild(item);
       });
+      // Enlaces externos específicos para el reverso de cada postal
+      const projectExternalLinks = {
+        dos: [
+          {
+            text: 'VER EXPERIENCIA ↗',
+            href: 'https://aguapanelita.github.io/Dos_Realidades/',
+            title: 'Ver experiencia: Dos realidades son infinitas realidades'
+          },
+          {
+            text: 'REPOSITORIO GITHUB ↗',
+            href: 'https://github.com/Aguapanelita/Dos_Realidades.git',
+            title: 'Repositorio GitHub: Dos realidades son infinitas realidades'
+          }
+        ],
+        pulso: [
+          {
+            text: 'VER EXPERIENCIA ↗',
+            href: 'https://aguapanelita.github.io/PULSO/',
+            title: 'Ver experiencia: PULSO'
+          },
+          {
+            text: 'REPOSITORIO GITHUB ↗',
+            href: 'https://github.com/Aguapanelita/PULSO.git',
+            title: 'Repositorio GitHub: PULSO'
+          }
+        ],
+        senses: [
+          {
+            text: 'VER EXPERIENCIA ↗',
+            href: 'https://aguapanelita.github.io/Senses_Party/',
+            title: 'Ver experiencia: Senses Party'
+          },
+          {
+            text: 'REPOSITORIO GITHUB ↗',
+            href: 'https://github.com/Aguapanelita/Senses_Party.git',
+            title: 'Repositorio GitHub: Senses Party'
+          }
+        ],
+        ninos: [
+          {
+            text: 'VISITAR PROYECTO ↗',
+            href: 'https://vimeo.com/1247494989?fl=tl&fe=ec&share=copy',
+            title: 'Ver en Vimeo: Ser niños'
+          },
+          {
+            text: 'VER PROCESO ↗',
+            href: 'https://www.instagram.com/reel/Dez3ifkKlDV/?utm_source=ig_web_copy_link&bqrl=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==',
+            title: 'Ver proceso'
+          }
+        ],
+        biodiversidad: [
+          {
+            text: 'VISITAR PROYECTO ↗',
+            href: 'https://vimeo.com/1247582560',
+            title: 'Ver en Vimeo: Los ecosistemas de Colombia'
+          }
+        ],
+        oskowampik: [
+          {
+            text: 'VISITAR PROYECTO ↗',
+            href: 'https://www.behance.net/gallery/242598803/Oskowampik-la-tierra-Dorada',
+            title: 'Ver en Behance: Oskowampik'
+          }
+        ]
+      };
+
       const backLink = document.createElement('div');
       backLink.className = 'postcard-back__project-link';
-      if (external?.href) {
-        const link = document.createElement('a');
-        link.href = external.href;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = 'VISITAR PROYECTO ↗';
-        backLink.appendChild(link);
+      const projectId = card.dataset.project;
+      const configuredLinks = projectExternalLinks[projectId];
+
+      if (configuredLinks && configuredLinks.length) {
+        configuredLinks.forEach((item) => {
+          const link = document.createElement('a');
+          link.href = item.href;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = item.text;
+          if (item.title) link.title = item.title;
+          link.setAttribute('aria-label', `${item.text.replace('↗', '').trim()}: ${cleanTitle}`);
+          backLink.appendChild(link);
+        });
       } else {
-        const unavailable = document.createElement('span');
-        unavailable.textContent = 'ENLACE NO DISPONIBLE';
-        backLink.appendChild(unavailable);
+        const externalLinks = Array.from(front.querySelectorAll('.letter-ext-link'));
+        if (externalLinks.length) {
+          externalLinks.forEach((ext) => {
+            if (ext.href) {
+              const link = document.createElement('a');
+              link.href = ext.href;
+              link.target = '_blank';
+              link.rel = 'noopener noreferrer';
+              link.textContent = ext.textContent.trim().length > 1 ? ext.textContent.trim().toUpperCase() : 'VISITAR PROYECTO ↗';
+              if (ext.title) link.title = ext.title;
+              backLink.appendChild(link);
+            }
+          });
+        } else {
+          const unavailable = document.createElement('span');
+          unavailable.textContent = 'ENLACE NO DISPONIBLE';
+          backLink.appendChild(unavailable);
+        }
       }
       // La descripción y el enlace permanecen en la mitad izquierda;
       // los programas/herramientas se trasladan a la zona inferior derecha.
