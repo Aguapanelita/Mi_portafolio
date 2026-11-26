@@ -2120,8 +2120,32 @@ html[data-theme="dark"] .folder--events .folder__tab-label {
 .postcard-back__programs-label { margin-top: 0; color: var(--wet-clay); font: 700 .5rem var(--font-mono); letter-spacing: .12em; text-align: right; }
 .postcard-back__programs { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px; margin-top: 7px; }
 .postcard-back__programs span { padding: 4px 7px; border: 1px solid rgba(137,76,41,.28); border-radius: 2px; color: var(--wet-clay); font: .54rem var(--font-mono); }
-.postcard-back__project-link { margin-top: 13px; }
-.postcard-back__project-link a, .postcard-back__project-link span { color: var(--wet-clay); font: 700 .58rem var(--font-mono); letter-spacing: .08em; text-decoration: none; border-bottom: 1px solid var(--wet-clay); padding-bottom: 3px; }
+.postcard-back__project-link {
+  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+.postcard-back__project-link a, .postcard-back__project-link span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--wet-clay);
+  font: 700 .58rem var(--font-mono);
+  letter-spacing: .08em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--wet-clay);
+  padding-bottom: 3px;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.postcard-back__project-link a:hover,
+.postcard-back__project-link a:focus-visible {
+  color: var(--burnt-sunrise);
+  border-color: var(--burnt-sunrise);
+  transform: translateY(-1px);
+}
 .postcard-back__divider { grid-column: 2; grid-row: 1; align-self: stretch; width: 1px; background: var(--wet-clay); opacity: .9; }
 .postcard-back__address { grid-column: 3; position: relative; display: flex; flex-direction: column; min-width: 0; padding: 0 2px 0 25px; }
 .postcard-back__heading { margin: 0; color: var(--wet-clay); font: 500 clamp(1.7rem,3vw,2.6rem)/1 var(--font-display); letter-spacing: .01em; }
@@ -2164,7 +2188,7 @@ html[data-theme="dark"] #moon-icon { display: block !important; }
   .postcard-back__description { margin: 15px 0 10px; font-size: .62rem; line-height: 1.4; }
   .postcard-back__programs { justify-content: flex-end; gap: 3px; margin-top: 4px; }
   .postcard-back__programs span { padding: 3px 4px; font-size: .39rem; }
-  .postcard-back__project-link { margin-top: 7px; }
+  .postcard-back__project-link { margin-top: 7px; gap: 5px 10px; }
   .postcard-back__project-link a, .postcard-back__project-link span, .postcard-back__return { font-size: .42rem; }
   .postcard-back__lines { margin-bottom: 8px; }
   .postcard-back__programs-label { text-align: right; }
@@ -2469,3 +2493,4 @@ html[data-theme="dark"] #moon-icon { display: block !important; }
   .postcard-back__video { margin: 12px 0 8px; }
   .postcard-back__programs span { font-size: .38rem; padding: 3px 4px; }
 }
+
